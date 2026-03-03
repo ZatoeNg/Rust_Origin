@@ -12,7 +12,7 @@ fn control_function(password: &str) {
     let length = password.len();
     if length >= 10 {
         println!("{password} is long enough!");
-    } else if length <= 0 {
+    } else if length == 0 {
         println!("{password} is shorter enough!");
     } else {
         println!("{password} is Not long enough!");
@@ -20,21 +20,43 @@ fn control_function(password: &str) {
 }
 
 fn loop_function() {
-    let mut count:i32 = 0;
-    loop {
+    let mut count: i32 = 0;
+    'main:loop {
         count += 1;
-        println!("Loop forever!={:?}",count);
 
         if count == 10 {
             println!("Loop Break!");
             break;
-        }else if count == 6 {
+        } else if count == 6 {
             println!("Loop continue!");
             continue;
+        } else if count == 3 {
+            println!("continue 'main loop!");
+            continue 'main;
         }
+        println!("Loop forever!={:?}", count);
     }
 }
 
-fn main() {
-    loop_function();
+fn while_function() {
+    let mut count: i32 = 0;
+
+    while count < 10 {
+        count += 1;
+        println!("While forever!={:?}", count);
+    }
+
+    println!("While End!");
 }
+
+fn for_function() {
+    for x in 0..10 {
+        println!("For：{}", x);
+    }
+}
+
+fn ownership_function() {
+    
+}
+
+fn main() {}
