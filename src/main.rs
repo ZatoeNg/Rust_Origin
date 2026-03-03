@@ -56,7 +56,8 @@ fn for_function() {
 }
 
 fn ownership_function() {
-    
+    let name = String::from("Robert");
+    let name_copy = name.clone();
 }
 
 fn main() {}
