@@ -1,7 +1,7 @@
 # Rust_Origin
-这是我第一次学习Rust的仓库。
+* 这是我第一次学习Rust的仓库。
 
-# 学习进度:P3
+# 学习进度:P50
 
 # &str 和 String
 * let wisdom="xxx", 是 &str（字符串切片），数据在只读段、不可修改、无所有权；
