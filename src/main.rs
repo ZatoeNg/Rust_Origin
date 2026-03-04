@@ -1,3 +1,5 @@
+mod SimpleGrep;
+
 use std::fs::File;
 use std::io::{ErrorKind, Read};
 
